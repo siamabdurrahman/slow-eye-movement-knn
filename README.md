@@ -28,12 +28,41 @@ This undergraduate research project investigates whether KNN can distinguish slo
 4. Compare accuracy, macro precision, macro recall, and macro F1.
 5. Report the selected five-neighbour model and visualise metric sensitivity to `k`.
 
+## Research workflow
+
+![Slow-eye-movement detection workflow](figures/research-workflow.png)
+
+The archived workflow moves from signal preparation and sampling to KNN classification of slow-eye-movement and non-slow-eye-movement events.
+
+## Signal examples
+
+| Slow eye movement | Non-slow eye movement |
+| --- | --- |
+| ![Representative slow-eye-movement signal](figures/slow-eye-movement-example.jpg) | ![Representative non-slow-eye-movement signal](figures/non-slow-eye-movement-example.jpg) |
+
+Additional representative signal series are available in the [figure index](figures/README.md).
+
+## Selected results
+
+The archived fixed-split evaluation reported the following metrics for the selected five-neighbour classifier:
+
+| Metric | Score |
+| --- | ---: |
+| Accuracy | 0.870 |
+| Macro precision | 0.871 |
+| Macro recall | 0.870 |
+| Macro F1 | 0.870 |
+
+![KNN evaluation metrics across neighbourhood sizes](figures/knn-metrics-by-neighbours.png)
+
+These values describe the supplied training/evaluation split. They are not estimates from subject-wise cross-validation or an independent external cohort.
+
 ## Reproducing the analysis
 
-Create a Python environment and install:
+Create a Python environment and install the declared dependencies:
 
 ```bash
-pip install numpy scipy matplotlib scikit-learn
+pip install -r requirements.txt
 ```
 
 The original analysis scripts contain local Windows paths retained for research provenance. Before running them, replace those paths with the location of the four `.mat` files in your clone. Alternatively, use `GUI.py` and select the repository folder when prompted.
@@ -52,9 +81,11 @@ A. R. Siam, “Slow Eye Movement Detection Using K-Nearest Neighbour Classificat
 
 Machine-readable citation metadata is provided in `CITATION.cff`.
 
+The full 2023 undergraduate thesis is available as a [public-release PDF](paper/slow-eye-movement-knn-undergraduate-thesis.pdf). The public copy removes the university student number while preserving the research content, authorship and pagination. See [`paper/README.md`](paper/README.md) for provenance and citation guidance.
+
 ## Scope and limitations
 
-This repository documents an academic prototype. Its original fixed train/evaluation split and path-dependent scripts should be modernised before comparative or production use. Results should be interpreted within the supplied dataset and experimental design.
+This repository documents an academic prototype. Its original fixed train/evaluation split and path-dependent scripts should be modernised before comparative or production use. Results should be interpreted within the supplied dataset and experimental design. Dataset provenance, consent, licensing and redistribution conditions should be independently verified before reuse.
 
 ## Author
 
