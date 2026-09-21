@@ -25,7 +25,7 @@ This undergraduate research project investigates whether KNN can distinguish slo
 1. Load feature matrices and labels from MATLAB `.mat` files.
 2. Inspect representative signals visually.
 3. Train KNN classifiers across a range of neighbourhood sizes.
-4. compare accuracy, macro precision, macro recall, and macro F1.
+4. Compare accuracy, macro precision, macro recall, and macro F1.
 5. Report the selected five-neighbour model and visualise metric sensitivity to `k`.
 
 ## Reproducing the analysis
