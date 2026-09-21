@@ -6,7 +6,7 @@ authors:
   - family-names: "Siam"
     given-names: "Abdur Rahman"
     orcid: "https://orcid.org/0009-0002-5904-9477"
-repository-code: "https://github.com/siamabdurrahman/Research-on-Slow-Eye-Movement-Based-on-KNN-Algorithm"
+repository-code: "https://github.com/siamabdurrahman/slow-eye-movement-knn"
 preferred-citation:
   type: article
   title: "Slow Eye Movement Detection Using K-Nearest Neighbour Classification"
