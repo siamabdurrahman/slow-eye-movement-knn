@@ -39,8 +39,8 @@ pip install numpy scipy matplotlib scikit-learn
 The original analysis scripts contain local Windows paths retained for research provenance. Before running them, replace those paths with the location of the four `.mat` files in your clone. Alternatively, use `GUI.py` and select the repository folder when prompted.
 
 ```bash
-git clone https://github.com/siamabdurrahman/Research-on-Slow-Eye-Movement-Based-on-KNN-Algorithm.git
-cd Research-on-Slow-Eye-Movement-Based-on-KNN-Algorithm
+git clone https://github.com/siamabdurrahman/slow-eye-movement-knn.git
+cd slow-eye-movement-knn
 python GUI.py
 ```
 
